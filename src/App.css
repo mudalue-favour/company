@@ -1,38 +1,288 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.header{
+    
+  background: rgba(32, 32, 32 , 0.7);
+  background-image: url('C:\Users\HP\Desktop\company\my-app\src\asset\pexels-tony-schnagl-5588399.jpg');
+  background-position: center;
+  background-size: cover;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-blend-mode: darken;
+  transition: 1s;
+  
+  /* clip-path: ellipse(70% 58% at 51% 28%); */
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+p , a{
+  font-family: 'Poppins', sans-serif;
+}
+h1 , h2 , h3{
+  font-family: 'Poppins', sans-serif;
+}
+.navbar-brand{
+  font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+}
+
+.header a{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* .h1 ,h2 ,h3{
+  text-transform: uppercase;
+} */
+/* .navbar-brand{
+  
+}
+.header a:hover{
+ 
+} */
+.header ul li{
+  margin-left: 10px;
+}
+/* .nav-link{
+  background-color: aquamarine;
+  border-radius: 40px;
+} */
+.header-text{
+  text-align: center;
+  color: wheat;
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  animation: myAnim 3s ease 0s 1 normal forwards;
+
+}
+.dropdown-menu{
+  background: wheat;
+  color: black;
+}
+.dropdown-menu a {
+  color: black;
+  background: wheat;
+}
+.dropdown-menu a:hover{
+  background:wheat;
+  color: black;
+ 
+}
+nav ul li {
+  color: wheat;
 }
 
-@keyframes App-logo-spin {
+.navbar-toggler-icon{
+  
+  background-color: rgb(93, 102, 53);
+}
+@keyframes myAnim {
+  0% {
+    transform: translateX(-500px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+.head-button{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: white;
+  color: rgba(13, 9, 253, 0.938);
+  border-radius: 0px;
+}
+
+.head-button:hover{
+  color: rgba(21, 159, 194, 0.7);
+  background: black;
+}
+
+
+
+.card-wrapper{
+  height: 240px;
+  width: 100%;
+  
+  border-radius: 15px
+  
+  
+
+}
+/* .btn{
+  background-color: #F1D4D4;
+} */
+.content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+}
+
+.card-wrapper:hover .content{
+  transform: rotateY(180deg);
+  transition:  1s;
+}
+
+.face-front{
+  color: rgba(13, 9, 253, 0.938);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;    
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+
+}
+
+
+.face-back{
+  
+  /* background: rgba( 0, 0, 0,); */
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-blend-mode: darken; */
+  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+
+}
+
+.icon-item{
+  color: black;
+}
+.services{
+  
+  background: wheat;
+  
+
+ 
+}
+
+.icon-list ul{
+   list-style-type: none;
+   justify-content: center;
+}
+.icon-list  li{
+   display: inline;
+   margin-right: 20px;
+   font-size: 50px;
+   border-radius: 100px;
+   /* background-color: aquamarine; */
+
+  }
+
+.show > .dropdown-menu {
+max-height: 900px;
+visibility: visible;
+}
+
+.dropdown-menu {
+display: block;
+max-height: 0;
+visibility: hidden;
+transition: all 0.5s ease-in-out;
+overflow: hidden;
+}
+
+
+
+
+.why{
+  color: white;
+  background-color: black
+}
+
+.un {
+  display: inline-block;
+}
+
+.un:after {
+  content: '';
+  width: 0px;
+  height: 3px;
+  display: block;
+  background-color: rgba(241, 9, 137, 0.938);
+  transition: 300ms;
+}
+
+.un:hover:after {
+  width: 100%;
+}
+
+.bang{
+  background-color: wheat;
+}
+.sang{
+  background-color: wheat;
+  color: rgba(13, 9, 253, 0.938);
+}
+.dang{
+  color: wheat;
+  background-color: black;
+}
+.why-icon{
+  color: rgba(241, 9, 137, 0.938);
+}
+body{
+  background-color: black;
+}
+.btn{
+  background-color: rgba(241, 9, 137, 0.938);
+  color: black;
+  border-radius: 40px;
+}
+
+
+
+
+@keyframes fadeInUp {
   from {
-    transform: rotate(0deg);
+      transform: translate3d(0,40px,0)
   }
+
   to {
-    transform: rotate(360deg);
+      transform: translate3d(0,0,0);
+      opacity: 1
   }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
 }
