@@ -69,7 +69,7 @@ const Body = () => {
             <span>SOFTWARE AND WEB DESIGN COMPANY</span>
           </div>
           <a href="#about" class="btn head-button un ">
-            CONTACT US
+            Reach out
           </a>
         </div>
       </section>
